@@ -1,0 +1,83 @@
+stages:
+    - build
+    - compose
+    - bersih-bersih
+    - bebersih-builder
+
+# Development
+build-dev:
+    stage: build
+    tags:
+        - build
+    only:
+        - dev
+    script:
+        - docker login -u $username -p $password
+        - docker build -t inovass/inovass:landing-dev .
+        - docker push inovass/inovass:landing-dev
+compose-dev:
+    stage: compose
+    tags:
+        - ovh
+    only:
+        - dev
+    when: on_success
+    script:
+        - docker-compose -f /solidapp/docker-compose.yml down
+        - docker rmi inovass/inovass:landing-dev
+        - docker-compose -f /solidapp/docker-compose.yml up -d
+bebersih-dev:
+    stage: bersih-bersih
+    tags:
+        - ovh
+    only:
+        - dev
+    when: always
+    script:
+        - docker system prune -af
+
+# Production
+build-stable:
+    stage: build
+    tags:
+        - build
+    only:
+        - master
+    script:
+        - docker login -u $username -p $password
+        - docker build -t inovass/inovass:landing-stable .
+        - docker push inovass/inovass:landing-stable
+compose-stable:
+    stage: compose
+    tags:
+        - ovh
+    only:
+        - master
+    when: on_success
+    script:
+        - docker-compose -f /solidapp/docker-compose.yml down
+        - docker rmi inovass/inovass:landing-stable
+        - docker-compose -f /solidapp/docker-compose.yml up -d
+bebersih-stable:
+    stage: bersih-bersih
+    tags:
+        - ovh
+    only:
+        - master
+    when: always
+    script:
+        - docker system prune -af
+
+# Bebersih Builder
+bebersih-builder:
+    stage: bebersih-builder
+    tags:
+        - build
+    only:
+        - master
+        - dev
+    when: always
+    script:
+        - docker builder prune -af
+        - docker system prune -af
+        - rm -rf /home/gitlab-runner/builds/*
