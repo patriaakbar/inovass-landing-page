@@ -50,12 +50,12 @@ export const SilabusAkreditasiLabPengujian = () => {
       <div className="bg-slate-50 px-4 py-14 sm:px-6 md:py-20 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header Section */}
-          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
-            <h2 className="mb-4 text-h2 font-bold text-primary">SILABUS PELATIHAN ONLINE</h2>
+          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
+            <h2 className="mb-4 text-h2 font-bold text-brand">SILABUS PELATIHAN ONLINE</h2>
             <p className="mb-4 text-lg font-semibold text-slate-700">Self Assessment Persiapan Akreditasi Laboratorium oleh KAN berdasarkan ISO/SNI 17025:2017</p>
 
             <div className="flex items-center gap-2 text-slate-600">
-              <ClockIcon className="w-5 h-5 flex-shrink-0 text-primary" />
+              <ClockIcon className="w-5 h-5 flex-shrink-0 text-brand" />
               <span>09.00 - 12.00 WIB (termasuk istirahat 15 menit)</span>
             </div>
           </Reveal>
@@ -63,18 +63,18 @@ export const SilabusAkreditasiLabPengujian = () => {
           {/* Training Details */}
           <div className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
             {/* Date Info */}
-            <Reveal className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+            <Reveal className="rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <CalendarDaysIcon className="w-6 h-6 text-primary" />
+                <CalendarDaysIcon className="w-6 h-6 text-brand" />
                 <h3 className="text-lg font-semibold">Tanggal Pelatihan</h3>
               </div>
               <p className="text-slate-700">3 Februari 2025</p>
             </Reveal>
 
             {/* Price Info */}
-            <Reveal className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+            <Reveal className="rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <CreditCardIcon className="w-6 h-6 text-primary" />
+                <CreditCardIcon className="w-6 h-6 text-brand" />
                 <h3 className="text-lg font-semibold">Biaya Pelatihan</h3>
               </div>
               <p className="text-slate-700">Rp. 500.000,- /Peserta</p>
@@ -85,7 +85,7 @@ export const SilabusAkreditasiLabPengujian = () => {
           </div>
 
           {/* Schedule Table */}
-          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
             <h3 className="text-xl font-semibold mb-4">Jadwal Pelatihan</h3>
             <div className="-mx-6 overflow-x-auto px-6 md:mx-0 md:px-0">
               <p className="mb-3 text-xs text-slate-400 md:hidden">Geser tabel ke samping untuk melihat semua kolom &rarr;</p>
@@ -97,9 +97,9 @@ export const SilabusAkreditasiLabPengujian = () => {
                     <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider w-40">Metode</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-slate-200">
+                <tbody className="bg-surface divide-y divide-slate-200">
                   {schedule.map((item, index) => (
-                    <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                    <tr key={index} className={index % 2 === 0 ? "bg-surface" : "bg-slate-50"}>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-500">{item.time}</td>
                       <td className="px-6 py-4">
                         <div className="text-sm text-slate-900 font-medium mb-2">{item.topic}</div>
@@ -122,9 +122,9 @@ export const SilabusAkreditasiLabPengujian = () => {
           </Reveal>
 
           {/* Tujuan Pelatihan */}
-          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
             <div className="flex items-center gap-3 mb-4">
-              <StarIcon className="w-6 h-6 text-primary" />
+              <StarIcon className="w-6 h-6 text-brand" />
               <h3 className="text-xl font-semibold">Tujuan Pelatihan</h3>
             </div>
             <ul className="list-disc list-inside text-slate-600 space-y-2">
@@ -136,9 +136,9 @@ export const SilabusAkreditasiLabPengujian = () => {
           </Reveal>
 
           {/* Peserta Pelatihan */}
-          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
             <div className="flex items-center gap-3 mb-4">
-              <UserGroupIcon className="w-6 h-6 text-primary" />
+              <UserGroupIcon className="w-6 h-6 text-brand" />
               <h3 className="text-xl font-semibold">Peserta Pelatihan</h3>
             </div>
             <ul className="list-disc list-inside text-slate-600 space-y-2">
@@ -153,9 +153,9 @@ export const SilabusAkreditasiLabPengujian = () => {
           </Reveal>
 
           {/* Facilitator Info */}
-          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
             <div className="flex items-center gap-3 mb-4">
-              <UserIcon className="w-6 h-6 text-primary" />
+              <UserIcon className="w-6 h-6 text-brand" />
               <h3 className="text-xl font-semibold">Narasumber</h3>
             </div>
             <p className="text-slate-700 font-semibold mb-2">Ir. Heriyanto, M.Si.</p>
@@ -172,9 +172,9 @@ export const SilabusAkreditasiLabPengujian = () => {
           </Reveal>
 
           {/* Output Pelatihan */}
-          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+          <Reveal className="mb-6 rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
             <div className="flex items-center gap-3 mb-4">
-              <CheckCircleIcon className="w-6 h-6 text-primary" />
+              <CheckCircleIcon className="w-6 h-6 text-brand" />
               <h3 className="text-xl font-semibold">Output Pelatihan</h3>
             </div>
             <ul className="list-disc list-inside text-slate-600 space-y-2">
@@ -186,9 +186,9 @@ export const SilabusAkreditasiLabPengujian = () => {
           </Reveal>
 
           {/* Facilities */}
-          <Reveal className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+          <Reveal className="rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft md:p-8">
             <div className="flex items-center gap-3 mb-4">
-              <GiftIcon className="w-6 h-6 text-primary" />
+              <GiftIcon className="w-6 h-6 text-brand" />
               <h3 className="text-xl font-semibold">Fasilitas Pelatihan</h3>
             </div>
             <ul className="list-disc list-inside text-slate-600 space-y-2">

@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import companyLogo from "../assets/company/logo-full.png";
 import { contact, serviceMenu, servicePaths, solidAppUrl } from "../data/site";
 import { ease } from "./ui/motion";
+import { ThemeToggle } from "./ui/ThemeToggle";
 
 const Chevron = ({ open, className = "" }) => (
   <svg viewBox="0 0 20 20" aria-hidden="true" className={`h-4 w-4 transition-transform duration-200 ${open ? "rotate-180" : ""} ${className}`}>
@@ -54,7 +55,7 @@ const Dropdown = ({ label, active, open, onOpen, onClose, onToggle, children, pa
               animate={{ y: 0, scale: 1 }}
               exit={{ y: 8, scale: 0.98 }}
               transition={{ duration: 0.22, ease }}
-              className="origin-top overflow-hidden rounded-2xl border border-slate-200/80 bg-white text-slate-700 shadow-lift"
+              className="origin-top overflow-hidden rounded-2xl border border-slate-200/80 bg-surface text-slate-700 shadow-lift"
             >
               {children}
             </motion.div>
@@ -69,7 +70,7 @@ const MenuLink = ({ to, children }) => (
   <NavLink
     to={to}
     className={({ isActive }) =>
-      `block rounded-lg px-3 py-2 text-sm transition-colors ${isActive ? "bg-primary-50 font-semibold text-primary" : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`
+      `block rounded-lg px-3 py-2 text-sm transition-colors ${isActive ? "bg-primary-50 font-semibold text-brand" : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`
     }
   >
     {children}
@@ -125,7 +126,7 @@ const ServicesPanel = () => {
 const ProductPanel = () => (
   <div className="w-72 p-3">
     <a href={solidAppUrl} target="_blank" rel="noopener noreferrer" className="group block rounded-xl p-3 transition-colors hover:bg-slate-50">
-      <p className="font-semibold text-slate-900 group-hover:text-primary">Aplikasi Solid</p>
+      <p className="font-semibold text-slate-900 group-hover:text-brand">Aplikasi Solid</p>
       <p className="mt-1 text-sm text-slate-500">Platform pengendalian dokumen dan integrasi dokumen ISO.</p>
     </a>
   </div>
@@ -333,7 +334,8 @@ export const CompanyNavbar = () => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
+            <ThemeToggle />
             <a
               href={contact.whatsappHref}
               target="_blank"

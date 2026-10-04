@@ -53,10 +53,10 @@ const implementations = [
 ];
 
 const structureContent = (
-  <ol className="divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+  <ol className="divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-surface">
     {structures.map((item, i) => (
       <li key={i} className="flex gap-4 p-5 md:gap-6 md:p-6">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-sm font-bold tabular-nums text-primary">{i + 1}</span>
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-sm font-bold tabular-nums text-brand">{i + 1}</span>
         <div className="pt-1">
           <p className="font-semibold text-slate-900">{item.title}</p>
           <p className="mt-1 text-slate-600">{item.description}</p>

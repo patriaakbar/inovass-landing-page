@@ -4,7 +4,7 @@ const variants = {
   accent: "bg-accent text-navy-950 hover:bg-accent-600 shadow-[0_8px_24px_-8px_rgb(245_197_24/0.6)]",
   primary: "bg-primary text-white hover:bg-primary-600",
   ghost: "bg-white/10 text-white ring-1 ring-inset ring-white/30 hover:bg-white/20 backdrop-blur",
-  outline: "bg-white text-slate-900 ring-1 ring-inset ring-slate-300 hover:ring-slate-400 hover:bg-slate-50",
+  outline: "bg-surface text-slate-900 ring-1 ring-inset ring-slate-300 hover:ring-slate-400 hover:bg-slate-50",
 };
 
 const base =

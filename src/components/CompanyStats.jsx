@@ -34,10 +34,10 @@ export const CompanyStats = () => {
   return (
     <section aria-label="Statistik" className="relative z-10 -mt-14 md:-mt-16">
       <div className="container-page">
-        <Stagger className="grid grid-cols-3 divide-x divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lift">
+        <Stagger className="grid grid-cols-3 divide-x divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-surface shadow-lift">
           {stats.map((s) => (
             <StaggerItem key={s.label} className="px-3 py-5 sm:px-6 sm:py-6 md:px-8 md:py-8">
-              <p className="text-2xl font-bold tracking-tight text-navy-900 sm:text-4xl md:text-5xl">
+              <p className="text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
                 <Counter value={s.value} suffix={s.suffix} />
               </p>
               <p className="mt-1 text-xs leading-snug text-slate-600 sm:mt-2 sm:text-sm md:text-base">{s.label}</p>

@@ -3,13 +3,57 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: light;
+    --canvas: 255 255 255;
+    --surface: 255 255 255;
+    --brand: 16 91 171;
+    --primary-50: 238 245 252;
+    --slate-50: 248 250 252;
+    --slate-100: 241 245 249;
+    --slate-200: 226 232 240;
+    --slate-300: 203 213 225;
+    --slate-400: 148 163 184;
+    --slate-500: 100 116 139;
+    --slate-600: 71 85 105;
+    --slate-700: 51 65 85;
+    --slate-800: 30 41 59;
+    --slate-900: 15 23 42;
+    --shadow: 3 16 28;
+    --shadow-a1: 0.04;
+    --shadow-a2: 0.05;
+    --shadow-a3: 0.12;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+    --canvas: 6 18 30;
+    --surface: 15 36 56;
+    --brand: 111 166 224;
+    --primary-50: 18 48 79;
+    --slate-50: 10 26 42;
+    --slate-100: 22 46 70;
+    --slate-200: 36 62 88;
+    --slate-300: 54 82 110;
+    --slate-400: 126 148 170;
+    --slate-500: 148 168 188;
+    --slate-600: 176 192 208;
+    --slate-700: 200 213 226;
+    --slate-800: 226 233 241;
+    --slate-900: 244 247 250;
+    --shadow: 0 0 0;
+    --shadow-a1: 0.3;
+    --shadow-a2: 0.35;
+    --shadow-a3: 0.55;
+  }
+
   html {
     -webkit-text-size-adjust: 100%;
     scroll-padding-top: 6rem;
   }
 
   body {
-    @apply bg-white font-sans text-base text-slate-700 antialiased;
+    @apply bg-canvas font-sans text-base text-slate-700 antialiased;
     overflow-x: clip;
   }
 
@@ -22,7 +66,7 @@
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-white;
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-canvas;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -49,7 +93,7 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-primary;
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-brand;
   }
 
   .eyebrow::before {
@@ -74,7 +118,7 @@
     @apply mb-2 text-base font-semibold;
   }
 
-  .prose-training h3:not(.text-primary) {
+  .prose-training h3:not(.text-brand) {
     @apply text-slate-900;
   }
 
@@ -88,11 +132,18 @@
   }
 
   .prose-training a {
-    @apply font-medium text-primary underline underline-offset-4;
+    @apply font-medium text-brand underline underline-offset-4;
   }
 }
 
 @layer utilities {
+  .theme-anim,
+  .theme-anim *,
+  .theme-anim *::before,
+  .theme-anim *::after {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, fill 0.3s ease, stroke 0.3s ease, box-shadow 0.3s ease !important;
+  }
+
   .paused {
     animation-play-state: paused;
   }

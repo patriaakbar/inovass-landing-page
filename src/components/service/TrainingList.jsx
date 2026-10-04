@@ -9,16 +9,16 @@ import { CtaBand } from "../CtaBand";
 const TrainingItem = ({ index, item, open, onToggle }) => {
   const id = useId();
   return (
-    <li className={`overflow-hidden rounded-2xl border bg-white transition-[border-color,box-shadow] duration-300 ${open ? "border-primary/40 shadow-lift" : "border-slate-200 hover:border-slate-300"}`}>
+    <li className={`overflow-hidden rounded-2xl border bg-surface transition-[border-color,box-shadow] duration-300 ${open ? "border-primary/40 shadow-lift" : "border-slate-200 hover:border-slate-300"}`}>
       <h3>
         <button type="button" aria-expanded={open} aria-controls={id} onClick={onToggle} className="flex w-full items-start gap-4 p-5 text-left md:gap-5 md:p-6">
           <span
-            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-bold tabular-nums transition-colors ${open ? "bg-primary text-white" : "bg-primary-50 text-primary"}`}
+            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-bold tabular-nums transition-colors ${open ? "bg-primary text-white" : "bg-primary-50 text-brand"}`}
           >
             {index + 1}
           </span>
           <span className="flex-1 pt-1.5 font-semibold text-slate-900 md:text-lg">{item.title}</span>
-          <svg viewBox="0 0 20 20" aria-hidden="true" className={`mt-2 h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300 ${open ? "rotate-180 text-primary" : ""}`}>
+          <svg viewBox="0 0 20 20" aria-hidden="true" className={`mt-2 h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300 ${open ? "rotate-180 text-brand" : ""}`}>
             <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
@@ -48,7 +48,7 @@ export const TrainingList = ({ banner, heading, items, note, afterList }) => {
       <section className="container-page py-14 md:py-20">
         <div className="mx-auto max-w-4xl">
           <Reveal>
-            <h2 className="text-h2 font-bold text-primary">{heading}</h2>
+            <h2 className="text-h2 font-bold text-brand">{heading}</h2>
             {note && <div className="mt-4 max-w-3xl text-slate-600">{note}</div>}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <label className="relative block w-full sm:max-w-sm">
@@ -59,7 +59,7 @@ export const TrainingList = ({ banner, heading, items, note, afterList }) => {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Cari pelatihan, mis. ISO 9001"
-                  className="block min-h-[48px] w-full rounded-full border border-slate-300 bg-white pl-11 pr-4 text-base placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/15"
+                  className="block min-h-[48px] w-full rounded-full border border-slate-300 bg-surface pl-11 pr-4 text-base placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/15"
                 />
               </label>
               <p className="text-sm text-slate-500" aria-live="polite">

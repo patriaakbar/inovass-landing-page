@@ -57,7 +57,7 @@ export const KontakInovass = () => {
               {channels.map((c) => {
                 const body = (
                   <>
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-primary">{c.icon}</span>
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-brand">{c.icon}</span>
                     <span className="min-w-0">
                       <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">{c.label}</span>
                       <span className="mt-0.5 block break-words font-medium text-slate-800">{c.value}</span>
@@ -80,7 +80,7 @@ export const KontakInovass = () => {
             </ul>
           </Reveal>
 
-          <Reveal delay={0.1} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-lift sm:p-8 md:p-10">
+          <Reveal delay={0.1} className="rounded-3xl border border-slate-200 bg-surface p-6 shadow-lift sm:p-8 md:p-10">
             <h2 className="text-h3 font-bold">Kirim pesan</h2>
             <div className="mt-6">
               <KontakForm formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />

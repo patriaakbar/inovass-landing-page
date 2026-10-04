@@ -8,7 +8,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -91,7 +91,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -173,7 +173,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -269,7 +269,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -360,7 +360,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -444,7 +444,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -513,7 +513,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -586,7 +586,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -657,7 +657,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -729,7 +729,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -800,7 +800,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -872,7 +872,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -944,7 +944,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1013,7 +1013,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1079,7 +1079,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1147,7 +1147,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1224,7 +1224,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1301,7 +1301,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1379,7 +1379,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1457,7 +1457,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1535,7 +1535,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1613,7 +1613,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1691,7 +1691,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1769,7 +1769,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1847,7 +1847,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1916,7 +1916,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>
@@ -1988,7 +1988,7 @@ export const PelatihanSertifikasi = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-2 text-primary">Durasi Pelatihan: 2 Hari</h3>
+            <h3 className="font-semibold mb-2 text-brand">Durasi Pelatihan: 2 Hari</h3>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Tujuan Pelatihan:</h3>

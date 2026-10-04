@@ -1,5 +1,5 @@
 const inputClass =
-  "block w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-primary focus:bg-white focus:outline-none focus:ring-4 focus:ring-primary/15";
+  "block w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-primary focus:bg-surface focus:outline-none focus:ring-4 focus:ring-primary/15";
 const labelClass = "mb-2 block text-sm font-semibold text-slate-800";
 
 const KontakForm = ({ formData, handleChange, handleSubmit }) => {

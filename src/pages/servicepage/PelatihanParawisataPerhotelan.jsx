@@ -95,7 +95,7 @@ const PersonilList = ({ items }) => (
 const AccordionContent = ({ tujuan, manfaatIndustri, manfaatPeserta, personil }) => (
   <div className="space-y-4">
     <div>
-      <h3 className="mb-2 font-semibold text-primary">Durasi Pelatihan: 2 Hari (Online/Offline)</h3>
+      <h3 className="mb-2 font-semibold text-brand">Durasi Pelatihan: 2 Hari (Online/Offline)</h3>
     </div>
     <div>
       <h3 className="mb-2 font-semibold">Tujuan Pelatihan:</h3>
@@ -257,7 +257,7 @@ export const PelatihanParawisataPerhotelan = () => {
       <p>Catatan: tanggal pelatihan dapat disesuaikan dengan permintaan calon peserta pelatihan.</p>
       <p className="mt-1">
         Kontak Person: <span className="font-semibold text-slate-800">Heriyanto</span> &mdash; Hp.{" "}
-        <a href="tel:+6281311173707" className="font-semibold text-primary hover:underline">
+        <a href="tel:+6281311173707" className="font-semibold text-brand hover:underline">
           081311173707
         </a>
         .
@@ -272,8 +272,8 @@ export const PelatihanParawisataPerhotelan = () => {
       </Reveal>
       <Stagger className="mt-8 grid gap-6 sm:grid-cols-2">
         {recommendedGroups.map((group) => (
-          <StaggerItem key={group.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <h3 className="text-lg font-semibold text-primary">{group.title}</h3>
+          <StaggerItem key={group.title} className="rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft">
+            <h3 className="text-lg font-semibold text-brand">{group.title}</h3>
             <ul className="mt-4 space-y-2 text-slate-600">
               {group.items.map((item) => (
                 <li key={item} className="flex gap-2">
@@ -292,7 +292,7 @@ export const PelatihanParawisataPerhotelan = () => {
       </Reveal>
       <Stagger className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {careerPaths.map((role) => (
-          <StaggerItem key={role} className="flex items-start gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800">
+          <StaggerItem key={role} className="flex items-start gap-2 rounded-xl border border-slate-200 bg-surface px-4 py-3 text-sm font-medium text-slate-800">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
             <span>{role}</span>
           </StaggerItem>

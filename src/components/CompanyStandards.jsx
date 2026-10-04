@@ -25,7 +25,7 @@ export const CompanyStandards = () => {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div role="tablist" aria-label="Kategori standar" className="inline-flex rounded-full border border-slate-200 bg-white p-1 shadow-soft">
+            <div role="tablist" aria-label="Kategori standar" className="inline-flex rounded-full border border-slate-200 bg-surface p-1 shadow-soft">
               {tabs.map((t) => (
                 <button
                   key={t.key}
@@ -60,13 +60,13 @@ export const CompanyStandards = () => {
                 <motion.li key={s.path} variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.45, ease } } }}>
                   <Link
                     to={s.path}
-                    className="group flex h-full items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lift"
+                    className="group flex h-full items-start gap-4 rounded-2xl border border-slate-200 bg-surface p-5 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lift"
                   >
                     <span className="flex-1">
-                      <span className="block text-lg font-bold text-navy-900 group-hover:text-primary">{s.code}</span>
+                      <span className="block text-lg font-bold text-slate-900 group-hover:text-brand">{s.code}</span>
                       <span className="mt-1 block text-sm text-slate-600">{s.name}</span>
                     </span>
-                    <svg viewBox="0 0 20 20" aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-slate-300 transition-[transform,color] duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary">
+                    <svg viewBox="0 0 20 20" aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-slate-300 transition-[transform,color] duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand">
                       <path d="M6 14 14 6m0 0H7.5M14 6v6.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>

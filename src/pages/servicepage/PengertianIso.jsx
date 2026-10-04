@@ -21,19 +21,19 @@ const facts = [
 const isoContent = (
   <div className="grid gap-4 sm:grid-cols-2">
     {facts.map((fact, i) => (
-      <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-        <span className="text-sm font-bold tabular-nums text-primary">{String(i + 1).padStart(2, "0")}</span>
+      <div key={i} className="rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft">
+        <span className="text-sm font-bold tabular-nums text-brand">{String(i + 1).padStart(2, "0")}</span>
         <p className="mt-3 text-slate-600">{fact}</p>
       </div>
     ))}
-    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-      <span className="text-sm font-bold tabular-nums text-primary">04</span>
+    <div className="rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft">
+      <span className="text-sm font-bold tabular-nums text-brand">04</span>
       <p className="mt-3 text-slate-600">
         <strong className="font-semibold text-slate-900">Mengembangkan standar untuk berbagai bidang,</strong> seperti:
       </p>
       <ul className="mt-4 flex flex-wrap gap-2">
         {fields.map((f) => (
-          <li key={f} className="rounded-full bg-primary-50 px-3 py-1 text-sm font-medium text-primary">
+          <li key={f} className="rounded-full bg-primary-50 px-3 py-1 text-sm font-medium text-brand">
             {f}
           </li>
         ))}

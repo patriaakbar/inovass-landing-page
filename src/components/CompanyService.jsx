@@ -39,16 +39,16 @@ export const CompanyService = () => {
             <StaggerItem key={subtitle}>
               <Link
                 to={to}
-                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-soft transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:border-primary/30 hover:shadow-lift md:p-8"
+                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-surface p-7 shadow-soft transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:border-primary/30 hover:shadow-lift md:p-8"
               >
                 <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-primary to-mint transition-transform duration-500 group-hover:scale-x-100" />
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-brand transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
                   <Icon className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
                 </span>
                 <p className="mt-6 text-sm font-medium text-slate-500">Layanan</p>
                 <h3 className="mt-1 text-h3 font-bold">{subtitle}</h3>
                 <p className="mt-3 flex-1 text-slate-600">{description}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand">
                   Selengkapnya
                   <ArrowIcon />
                 </span>

@@ -65,7 +65,7 @@ export const TentangKami = () => {
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-3">
             {features.map(({ image, text, description }) => (
-              <StaggerItem key={text} className="group rounded-2xl border border-slate-200 bg-white p-7 shadow-soft transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 hover:shadow-lift">
+              <StaggerItem key={text} className="group rounded-2xl border border-slate-200 bg-surface p-7 shadow-soft transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 hover:shadow-lift">
                 <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-50 transition-transform duration-300 group-hover:scale-105">
                   <img src={image} alt="" className="h-10 w-10" loading="lazy" />
                 </span>
@@ -91,7 +91,7 @@ export const TentangKami = () => {
             <Stagger as="ol" className="mt-10 space-y-8">
               {advantages.map((advantage) => (
                 <StaggerItem as="li" key={advantage.number} className="flex gap-5 md:gap-6">
-                  <span className="text-3xl font-bold tabular-nums text-primary md:text-4xl">{advantage.number}</span>
+                  <span className="text-3xl font-bold tabular-nums text-brand md:text-4xl">{advantage.number}</span>
                   <div className="border-l border-slate-200 pl-5 md:pl-6">
                     <h3 className="text-lg font-semibold md:text-xl">{advantage.title}</h3>
                     <p className="mt-2 text-slate-600">{advantage.description}</p>

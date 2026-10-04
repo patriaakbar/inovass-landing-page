@@ -8,7 +8,7 @@ export const CompanyLayout = () => {
   const outlet = useOutlet();
 
   return (
-    <div className="flex min-h-screen w-full flex-col bg-white">
+    <div className="flex min-h-screen w-full flex-col bg-surface">
       <CompanyNavbar />
       <AnimatePresence mode="wait" initial={false} onExitComplete={() => window.scrollTo(0, 0)}>
         <motion.main

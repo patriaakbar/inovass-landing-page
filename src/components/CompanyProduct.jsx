@@ -49,7 +49,7 @@ export const CompanyProduct = () => {
             style={{ y }}
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.4 }}
-            className="relative block overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lift"
+            className="relative block overflow-hidden rounded-2xl border border-slate-200 bg-surface p-2 shadow-lift"
           >
             <div className="flex items-center gap-1.5 px-3 pb-2 pt-1" aria-hidden="true">
               <span className="h-2.5 w-2.5 rounded-full bg-slate-300" />

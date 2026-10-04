@@ -18,8 +18,8 @@ const itemBody = (item) => (typeof item === "string" ? item : item.description);
 const Cards = ({ items }) => (
   <Stagger className="grid gap-4 sm:grid-cols-2">
     {items.map((item, i) => (
-      <StaggerItem key={i} className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-lift">
-        <span className="text-sm font-bold tabular-nums text-primary">{String(i + 1).padStart(2, "0")}</span>
+      <StaggerItem key={i} className="group rounded-2xl border border-slate-200 bg-surface p-6 shadow-soft transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-lift">
+        <span className="text-sm font-bold tabular-nums text-brand">{String(i + 1).padStart(2, "0")}</span>
         {itemTitle(item) && <h3 className="mt-3 text-lg font-semibold">{itemTitle(item)}</h3>}
         {itemBody(item) && <p className={itemTitle(item) ? "mt-2 text-slate-600" : "mt-3 text-slate-700"}>{itemBody(item)}</p>}
       </StaggerItem>
@@ -42,10 +42,10 @@ const Checklist = ({ items }) => (
 );
 
 const List = ({ items }) => (
-  <Stagger as="ol" className="divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+  <Stagger as="ol" className="divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-surface">
     {items.map((item, i) => (
       <StaggerItem as="li" key={i} className="flex gap-4 p-5 transition-colors hover:bg-slate-50 md:gap-6 md:p-6">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-sm font-bold tabular-nums text-primary">{i + 1}</span>
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-50 text-sm font-bold tabular-nums text-brand">{i + 1}</span>
         <div className="pt-1">
           {itemTitle(item) && <p className="font-semibold text-slate-900">{itemTitle(item)}</p>}
           {itemBody(item) && <p className={itemTitle(item) ? "mt-1 text-slate-600" : "text-slate-700"}>{itemBody(item)}</p>}
@@ -59,7 +59,7 @@ const Steps = ({ items }) => (
   <Stagger as="ol" className="relative space-y-6 before:absolute before:bottom-4 before:left-[1.1rem] before:top-4 before:w-px before:bg-gradient-to-b before:from-primary before:to-primary/10">
     {items.map((item, i) => (
       <StaggerItem as="li" key={i} className="relative flex gap-5">
-        <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold tabular-nums text-white ring-4 ring-white">{i + 1}</span>
+        <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold tabular-nums text-white ring-4 ring-canvas">{i + 1}</span>
         <div className="pt-1.5">
           {itemTitle(item) && <p className="font-semibold text-slate-900">{itemTitle(item)}</p>}
           {itemBody(item) && <p className={itemTitle(item) ? "mt-1 text-slate-600" : "text-slate-700"}>{itemBody(item)}</p>}
@@ -112,7 +112,7 @@ const TableOfContents = ({ sections, active }) => (
             href={`#${s.id}`}
             aria-current={active === s.id ? "true" : undefined}
             className={`-ml-px block border-l-2 py-1.5 pl-4 text-sm transition-colors ${
-              active === s.id ? "border-primary font-semibold text-primary" : "border-transparent text-slate-600 hover:border-slate-400 hover:text-slate-900"
+              active === s.id ? "border-primary font-semibold text-brand" : "border-transparent text-slate-600 hover:border-slate-400 hover:text-slate-900"
             }`}
           >
             {s.title}
@@ -134,7 +134,7 @@ const MobileToc = ({ sections }) => (
     <ul className="space-y-1 px-5 pb-4">
       {sections.map((s) => (
         <li key={s.id}>
-          <a href={`#${s.id}`} className="block py-2 text-slate-600 hover:text-primary">
+          <a href={`#${s.id}`} className="block py-2 text-slate-600 hover:text-brand">
             {s.title}
           </a>
         </li>
@@ -157,7 +157,7 @@ const RelatedStandards = ({ category }) => {
             key={s.path}
             to={s.path}
             title={s.name}
-            className="inline-flex min-h-[40px] items-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700 transition-colors hover:border-primary hover:bg-primary-50 hover:text-primary"
+            className="inline-flex min-h-[40px] items-center rounded-full border border-slate-200 bg-surface px-4 text-sm font-medium text-slate-700 transition-colors hover:border-primary hover:bg-primary-50 hover:text-brand"
           >
             {s.code}
           </Link>
@@ -179,7 +179,7 @@ export const ServicePageTemplate = ({ banner, heading, intro, sections, category
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_16rem] lg:gap-16 xl:grid-cols-[minmax(0,1fr)_18rem]">
           <article className="min-w-0">
             <Reveal className="max-w-3xl">
-              {heading && <h2 className="text-h2 font-bold text-primary">{heading}</h2>}
+              {heading && <h2 className="text-h2 font-bold text-brand">{heading}</h2>}
               <div className="mt-5 space-y-4">
                 <Paragraphs value={intro} className="text-lead text-slate-600" />
               </div>

@@ -1,5 +1,10 @@
+const token = (name) => `rgb(var(--${name}) / <alpha-value>)`;
+const scale = (name, steps) => Object.fromEntries(steps.map((step) => [step, token(`${name}-${step}`)]));
+const neutral = scale("slate", [50, 100, 200, 300, 400, 500, 600, 700, 800, 900]);
+
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}", "node_modules/flowbite-react/lib/esm/**/*.js"],
   theme: {
     fontFamily: {
@@ -7,8 +12,13 @@ export default {
     },
     extend: {
       colors: {
+        canvas: token("canvas"),
+        surface: token("surface"),
+        brand: token("brand"),
+        slate: neutral,
+        gray: neutral,
         primary: {
-          50: "#eef5fc",
+          50: token("primary-50"),
           100: "#cfdeee",
           200: "#9fbddd",
           300: "#709dcd",
@@ -96,8 +106,8 @@ export default {
         container: "80rem",
       },
       boxShadow: {
-        soft: "0 1px 2px rgb(3 16 28 / 0.04), 0 4px 12px rgb(3 16 28 / 0.05)",
-        lift: "0 2px 4px rgb(3 16 28 / 0.04), 0 12px 32px -4px rgb(3 16 28 / 0.12)",
+        soft: "0 1px 2px rgb(var(--shadow) / var(--shadow-a1)), 0 4px 12px rgb(var(--shadow) / var(--shadow-a2))",
+        lift: "0 2px 4px rgb(var(--shadow) / var(--shadow-a1)), 0 12px 32px -4px rgb(var(--shadow) / var(--shadow-a3))",
       },
       animation: {
         marquee: "marquee var(--marquee-duration, 60s) linear infinite",
